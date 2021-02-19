@@ -1,0 +1,171 @@
+[{
+  "_id": {
+    "$oid": "602f9f887aae1cf6c280dcb1"
+  },
+  "DB_name": "Manufacturer",
+  "manufacturer_code": "602f9f887aae1cf6c280dcb1",
+  "manufacturer_name": "Mercedes",
+  "manufacturer_details": "Best German Company",
+  "Models": [
+    {
+      "model_code": "M1",
+      "daily_hire_rate": 10500,
+      "model_name": "AMG",
+      "car": ""
+    },
+    {
+      "model_code": "M2",
+      "daily_hire_rate": 10500,
+      "model_name": "E-200",
+      "car": ""
+    },
+    {
+      "model_code": "M3",
+      "daily_hire_rate": 999,
+      "model_name": "Maybach",
+      "car": [
+        {
+          "car_id": {
+            "$oid": "602fcf467aae1cf6c280dcb2"
+          }
+        },
+        {
+          "car_id": {
+            "$oid": "602fcfa9343f5510603011b2"
+          }
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "602fcf467aae1cf6c280dcb2"
+  },
+  "DB_name": "Car",
+  "license_number": 1,
+  "engine_size": "1800cc",
+  "other_car_details": "awesome car",
+  "bookings": [
+    {
+      "$oid": "602fdfde7aae1cf6c280dcb7"
+    },
+    {
+      "$oid": "602fdeac7aae1cf6c280dcb5"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "602fcfa9343f5510603011b2"
+  },
+  "DB_name": "Car",
+  "license_number": 2,
+  "engine_size": "2400cc",
+  "other_car_details": "great car",
+  "bookings": {
+    "$oid": "602fdfde7aae1cf6c280dcb7"
+  }
+},{
+  "_id": {
+    "$oid": "602f9335343f5510603011b0"
+  },
+  "DB_name": "Customer",
+  "customer_id": "_id",
+  "first_name": "Osama",
+  "last_name": "Ehsan",
+  "title": "NA",
+  "gender": "Male",
+  "email_address": "osamahsan@gmail.com",
+  "phone_number": "03035866788",
+  "address": "AECHS, Rwp",
+  "city": "Rawalpindi",
+  "state": "Punjab",
+  "other_customer_details": "Electrical Engineer",
+  "car": [
+    {
+      "car_id": {
+        "$oid": "602fcf467aae1cf6c280dcb2"
+      }
+    },
+    {
+      "car_id": {
+        "$oid": "602fcfa9343f5510603011b2"
+      }
+    }
+  ],
+  "bookings": [
+    {
+      "$oid": "602fdfde7aae1cf6c280dcb7"
+    },
+    {
+      "$oid": "602fdeac7aae1cf6c280dcb5"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "602fdeac7aae1cf6c280dcb5"
+  },
+  "DB_name": "Booking",
+  "booking_id": "602fdeac7aae1cf6c280dcb5",
+  "datetime_of_service": {
+    "$date": "2021-02-19T03:14:00Z"
+  },
+  "payment_received_yn": "true",
+  "mechanic": [
+    {
+      "$oid": "602fe3b07aae1cf6c280dcb8"
+    },
+    {
+      "$oid": "602fe40f7aae1cf6c280dcb9"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "602fdfde7aae1cf6c280dcb7"
+  },
+  "DB_name": "Booking",
+  "booking_id": "602fdfde7aae1cf6c280dcb7",
+  "datetime_of_service": {
+    "$date": "2021-02-19T19:30:00Z"
+  },
+  "payment_received_yn": "false",
+  "mechanic": [
+    {
+      "$oid": "602fe3b07aae1cf6c280dcb8"
+    },
+    {
+      "$oid": "602fe40f7aae1cf6c280dcb9"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "602fe3b07aae1cf6c280dcb8"
+  },
+  "DB_name": "Mechanic",
+  "mechanic_id": "602fe3b07aae1cf6c280dcb8",
+  "mechanic_name": "Ali",
+  "other_mehanic_details": "electrician",
+  "bookings": [
+    {
+      "$oid": "602fdeac7aae1cf6c280dcb5"
+    },
+    {
+      "$oid": "602fdfde7aae1cf6c280dcb7"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "602fe40f7aae1cf6c280dcb9"
+  },
+  "DB_name": "Mechanic",
+  "mechanic_id": "602fe40f7aae1cf6c280dcb9",
+  "mechanic_name": "John",
+  "other_mechanic_details": "radiator mechanic",
+  "bookings": [
+    {
+      "$oid": "602fdeac7aae1cf6c280dcb5"
+    },
+    {
+      "$oid": "602fdfde7aae1cf6c280dcb7"
+    }
+  ]
+}]
